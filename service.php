@@ -7,6 +7,5 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Service</h1>
 </body>
 </html>
