@@ -1,0 +1,117 @@
+.checkbox input {
+    position: absolute;
+    padding: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: auto;
+    margin-left: -750px;
+}
+
+
+body {
+    min-height: 100%;
+    background-color: #414642;
+}
+
+
+label {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 13px;
+    color: rgb(112, 112, 112);
+    line-height: 22px;
+}
+
+legend {
+    color: rgb(255, 255, 255);
+    background-color: #c06114;
+    padding: 3px 5px;
+    font-size: 20px;
+}
+
+h1 {
+    position: absolute;
+    margin: 0;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #f3f4eefd;
+    box-shadow: 0 0 20px 0 #c06014;
+}
+
+.banner {
+    position: relative;
+    height: 320px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner::after {
+    content: "";
+    background-color: #414642d8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+}
+
+
+
+
+.question span {
+    margin-left: 30px;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #c06014;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #095484;
+}
