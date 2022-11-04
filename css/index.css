@@ -160,7 +160,7 @@ body{
     ================== */
 .inner{
     background-size: cover;
-    background-image: url('pic/bg2.jpeg');
+    background-image: url('../pic/bg2.jpeg');
     background-color: #c06014;
     width: 70%;
     height: 60vh;
@@ -209,7 +209,7 @@ body{
     justify-content: center;
 }
 .kiri{
-    background-image: url(pic/pengaju.jpg);
+    background-image: url(../pic/pengaju.jpg);
     background-size: cover;
     margin: 50px 0;
     width: 500px;
@@ -217,7 +217,7 @@ body{
 
 }
 .kanan{
-    background-image: url(pic/pt3.png);
+    background-image: url(../pic/pt3.png);
     background-size: cover;
     margin: 50px 0;
     width: 500px;
