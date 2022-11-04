@@ -177,7 +177,6 @@ body{
     transition: all .5s;
     padding: 100px 0;
     color: #000000;
-
 }
 .isi{
     /* border-top: #000000 solid 5px; */
@@ -312,7 +311,45 @@ input.sub:hover{
             footer
 =============================== */
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #414642;
     width: 100%;
-    height: 20vh;
+    height: 40vh;
+    text-align: center;
 }
+footer ul{
+    padding-left: 300px;
+    margin-left: 17%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+footer ul li{
+    padding-left:90px ;
+    list-style: none;
+    padding: 10px;
+}
+footer img{
+    width: 50px;
+}
+img.wa{
+    position: relative;
+    right: 45%;
+    width: 12%;
+    
+}
+.foll-h2{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-bottom:4px;
+    border-bottom: #ebebeb solid 2px;
+}
+footer h3{
+    position: relative;
+    bottom: 20px;
+}
+
