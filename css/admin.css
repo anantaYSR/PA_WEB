@@ -26,10 +26,15 @@ body{
 
 .wrapper .sidebar ul li a{
     display: block;
-    padding: 23px 30px;
+    padding: 15px 30px;
     color: rgb(241, 237, 237);
     font-size: 16px;
     position: relative;
+}
+
+span{
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 
