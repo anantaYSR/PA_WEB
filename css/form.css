@@ -1,9 +1,8 @@
 .checkbox input {
     position: absolute;
-    padding: 20px;
-    margin: 0 10px 0 0;
+    margin: 21px 10px 0 0;
     vertical-align: auto;
-    margin-left: -750px;
+    margin-left: -316px;
 }
 
 
@@ -117,4 +116,9 @@ button {
 
 button:hover {
     background: #095484;
+}
+
+i{
+    padding-left: 21px;
+    font-size: 12px;
 }
