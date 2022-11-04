@@ -16,7 +16,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 225px;
+    width: 120px;
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
@@ -26,8 +26,34 @@ body{
 
 .wrapper .sidebar ul li a{
     display: block;
-    padding: 35px 30px;
+    padding: 23px 30px;
     color: rgb(241, 237, 237);
     font-size: 16px;
     position: relative;
 }
+
+
+table {
+    border-collapse: collapse;
+    
+  }
+  
+  table thead th {
+    text-align: center;
+    background: rgb(207, 199, 199);
+    padding: 5px 10px;
+    color: #f08127;
+  }
+  
+  table tbody tr td {
+    padding: 10px;
+    background:  #e7e3e3 ;
+    color: #000000;
+  }
+  
+  
+  table tbody tr td a {
+    color: #e74c3c;
+    text-shadow: none;
+    font-weight: bold;
+  }
