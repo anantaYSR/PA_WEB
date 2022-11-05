@@ -1,3 +1,63 @@
+<?php
+    session_start();
+    require 'konfik.php';
+
+    if(isset($_SESSION['login'])){
+        if($_SESSION['login']=='admin'){
+            header('location: ./admin/index.php');
+            exit;
+        }
+        elseif($_SESSION['login']=='user'){
+            header("location: ./user/index.php");
+        }
+    }
+
+    if(isset($_POST['btn'])){
+        $username=$_POST['username'];
+        $pass=$_POST['pass'];
+
+        $result= mysqli_query($db, "SELECT * FROM user WHERE username='$username' OR email='$username'");
+
+        if (mysqli_num_rows($result)>0){
+            $row=mysqli_fetch_array($result);
+            $nama=$row['nama'];
+
+            if (password_verify($pass, $row['pass'])){
+                $_SESSION['login']="user";
+                echo "<script>
+                        alert('Selamat datang $nama');
+                        document.location.href='./user/index.php';
+                         </script> ";
+                exit;
+            }
+            else{
+                echo "<script>
+                        alert('Username dan Password anda salah');
+                        document.location.href='index.php';
+                         </script> ";
+            }
+        }
+        else if ($username=='admin' && $pass=='admin'){
+            $_SESSION['login']='admin';
+            echo "<script>
+                        alert('Selamat datang Admin');
+                        document.location.href='./admin/adminter.html';
+                         </script> ";
+        }
+        else{
+            echo "<script>
+                        alert('Buat akun terlebih dahulu');
+                        document.location.href='register.php';
+
+                         </script> ";
+        }
+    }
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,47 +102,4 @@
 </body>
 </html>
 </head>
-
-<?php
-    // session_start();
-    require 'konfik.php';
-
-    // if(isset($_SESSION['login'])){
-    //     header("Location: index.php");
-    //     exit;
-    // }
-
-    if(isset($_POST['btn'])){
-        $username=$_POST['username'];
-        $pass=$_POST['pass'];
-
-        $result= mysqli_query($db, "SELECT * FROM user WHERE username='$username' OR email='$username'");
-
-        if (mysqli_num_rows($result)>0){
-            $row=mysqli_fetch_array($result);
-            $nama=$row['nama'];
-
-            if (password_verify($pass, $row['pass'])){
-                echo "<script>
-                        alert('Selamat datang $nama');
-                        document.location.href='index.php';
-                         </script> ";
-                exit;
-            }
-            else{
-                echo "<script>
-                        alert('Username dan Password anda salah');
-                        document.location.href='login.php';
-                         </script> ";
-            }
-        }
-        else{
-            echo "<script>
-                        alert('Buat akun terlebih dahulu');
-                        document.location.href='register.php';
-
-                         </script> ";
-        }
-    }
-?>
 

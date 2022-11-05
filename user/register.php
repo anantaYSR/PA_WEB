@@ -41,7 +41,6 @@
 </body>
 </html>
 </head>
-
 <?php
 require 'konfik.php';
 

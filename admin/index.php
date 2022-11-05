@@ -1,13 +1,26 @@
+<?php
+ session_start();
+ require '../konfik.php';
+ if(!isset($_SESSION['login'])){
+    echo "<script>
+        alert('Silahkan login terlebih dahulu');
+        document.location.href='login.php';
+            </script> ";
+}
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/user.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <title>PIALANG HOME PAGE</title>
 </head>
 <body>
@@ -16,8 +29,8 @@
         <div class="header">
             <div class="name-header"><p><k class="k">CK</k> PIALAN<p class="g">G</p></p></div>
             <nav>
-                <a href="">LOGIN</a>
-                <a href="">REGISTER</a>
+                <a href="form.php">FORM</a>
+                <a href="../logout.php">LOGOUT</a>
             </nav>
             <div class="btn" id="btn">
                 <line></line>
@@ -90,14 +103,14 @@
         <footer id="footer">
             <h2 class="foll-h2">FOLLOW US</h2>
             <ul>
-                <li><a href=""><img src="pic/fb.png" alt=""></a></li>
-                <li><a href=""><img src="pic/ig.png" alt=""></a></li>
-                <li><a href=""><img src="pic/wa.png" alt="" class="wa"></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
-            <h3>2022 PT PIALANG</h3> 
+            <small>Copyright 2022 by CK Pialang</small>
         </footer>
     </div> <!--end of container line-->
 
 </body>
-<script src="index.js"></script>
+<script src="../js/index.js"></script>
 </html>
