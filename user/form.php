@@ -1,55 +1,70 @@
-<!-- <?php
+<?php
 
-    // include
-    // session_start();
-    // require 'konek.php';
+        session_start();
+        require '../konfik.php';
+        if(!isset($_SESSION['login'])){
+            echo "<script>
+                alert('Silahkan login terlebih dahulu');
+                document.location.href='login.php';
+                    </script> ";
+        }
 
-    // if(!isset($_SESSION['login'])){
-    //     echo "<script>
-    //         alert('Silahkan login terlebih dahulu');
-    //         document.location.href='../index.php';
-    //             </script> ";
-    // }
-
-    // if(isset($_POST['btn'])){
-    //     $namapembeli=$_POST['namapemesan'];
-    //     $namaproduk=$_POST['nama'];
-    //     $jenis=$_POST['jenis'];
-    //     $harga=$_POST['harga'];
-    //     $jumlah=$_POST['jumlah'];
-    //     $tanggalpesan=$_POST['tanggal'];
-    //     $tanggalantar=$_POST['tanggalAntar'];
-
-    //     $nota = $_FILES['bukti']['name'];
-    //     $x = explode('.',$nota);
-    //     $ekstensi = strtolower(end($x));
-
-    //     $nota_baru = "$namapembeli.$ekstensi";
-    //     $tmp = $_FILES['bukti']['tmp_name'];
-
-    //     if(move_uploaded_file($tmp, 'nota/'.$nota_baru)){
-    //         $query = "INSERT INTO pesan(nama_produk, jenis, harga, jumlah, tanggal_antar, tanggalPesan, namaPemesan, nota) 
-    //         VALUES ('$namaproduk', '$jenis', '$harga', '$jumlah', '$tanggalantar', '$tanggalpesan', '$namapembeli', '$nota_baru')";
-    //         $result = $db->query($query);
-
-    //         if($result){
-    //             echo "
-    //                 <script>
-    //                     alert('Pesanan Berhasil Ditambah');
-    //                 </script>
-    //             ";
-    //         }else{
-    //             echo "
-    //                 <script>
-    //                     alert('Pesanan Gagal Ditambah');
-    //                 </script>
-    //             ";
-    //         }
-    //         header("Location:index.php");
+    // if(isset($_SESSION['login'])){
+    //     if($_SESSION['login']=='admin'){
+    //         header('location: ./admin/index.php');
+    //         exit;
+    //     }
+    //     elseif($_SESSION['login']=='user'){
+    //         // header("location: index.php");
     //     }
     // }
-?> -->
+    // else{
+    //     echo "<script>
+    //     alert('Silahkan login terlebih dahulu');
+    //     document.location.href='../login.php';
+    //         </script> ";
+    // }
 
+    if(isset($_POST['btn'])){
+        $nama=$_POST['nama'];
+        $email=$_POST['email'];
+        $nomorhp=$_POST['nomorhp'];
+        $alamat=$_POST['alamat'];
+        $pekerjaan=$_POST['pekerjaan'];
+        $tipe=$_POST['tipe'];
+        $jumlah=$_POST['jumlah'];
+        $waktu=$_POST['waktu'];
+        $tanggalJoin=$_POST['tanggalDaftar'];
+        $ktp = $_FILES['ktp']['name'];
+        $x = explode('.',$ktp);
+        $ekstensi = strtolower(end($x));
+        $foto_ktp = "$nama.$ekstensi";
+        $tmp = $_FILES['ktp']['tmp_name'];
+        if(move_uploaded_file($tmp, '../admin/ktp/'.$foto_ktp)){
+            $query = "INSERT INTO kerjasama(nama, email, nomorhp ,alamat, pekerjaan, tipe, jumlah, waktu, tgl_daftar, foto_ktp) 
+            VALUES ('$nama', '$email', '$nomorhp', '$alamat', '$pekerjaan', '$tipe', '$jumlah', '$waktu', '$tanggalJoin','$foto_ktp')";
+            $result = $db->query($query);
+            if($result){
+                echo "
+                    <script>
+                        alert('Pesanan Berhasil Ditambah');
+                        document.location.href='index.php';
+                    </script>
+                ";
+                
+            }else{
+                echo "
+                    <script>
+                        alert('Pesanan Gagal Ditambah');
+                        document.location.href='index.php';
+
+                    </script>
+                ";
+            }
+            
+        }
+    }
+?>
 
 
 <!DOCTYPE html>
@@ -61,6 +76,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From Kerjasama</title>
     <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/user.css"> -->
+
     <!-- <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
@@ -181,12 +198,12 @@
     </div>
     <div class="container">
         <footer id="footer">
-                <h2 class="foll-h2">FOLLOW US</h2>
-                <ul>
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
+            <h2 class="foll-h2">FOLLOW US</h2>
+            <ul>
+                <li><a href=""><img src="../pic/fb.png" alt=""></a></li>
+                <li><a href=""><img src="../pic/ig.png" alt=""></a></li>
+                <li><a href=""><img src="../pic/wa.png" alt="" class="wa"></a></li>
+            </ul>
             <small>Copyright 2022 by CK Pialang</small>
         </footer>
     </div>
@@ -194,55 +211,3 @@
 <script src="../js/index.js"></script>
 </html>
 
-<?php
-
-    // include
-    // session_start();
-    require '../konfik.php';
-
-    // if(!isset($_SESSION['login'])){
-    //     echo "<script>
-    //         alert('Silahkan login terlebih dahulu');
-    //         document.location.href='../index.php';
-    //             </script> ";
-    // }    
-    if(isset($_POST['btn'])){
-        $nama=$_POST['nama'];
-        $email=$_POST['email'];
-        $nomorhp=$_POST['nomorhp'];
-        $alamat=$_POST['alamat'];
-        $pekerjaan=$_POST['pekerjaan'];
-        $tipe=$_POST['tipe'];
-        $jumlah=$_POST['jumlah'];
-        $waktu=$_POST['waktu'];
-        $tanggalJoin=$_POST['tanggalDaftar'];
-        $ktp = $_FILES['ktp']['name'];
-        $x = explode('.',$ktp);
-        $ekstensi = strtolower(end($x));
-        $foto_ktp = "$nama.$ekstensi";
-        $tmp = $_FILES['ktp']['tmp_name'];
-        if(move_uploaded_file($tmp, '../admin/ktp/'.$foto_ktp)){
-            $query = "INSERT INTO kerjasama(nama, email, nomorhp ,alamat, pekerjaan, tipe, jumlah, waktu, tgl_daftar, foto_ktp) 
-            VALUES ('$nama', '$email', '$nomorhp', '$alamat', '$pekerjaan', '$tipe', '$jumlah', '$waktu', '$tanggalJoin','$foto_ktp')";
-            $result = $db->query($query);
-            if($result){
-                echo "
-                    <script>
-                        alert('Pesanan Berhasil Ditambah');
-                        document.location.href='index.php';
-                    </script>
-                ";
-                
-            }else{
-                echo "
-                    <script>
-                        alert('Pesanan Gagal Ditambah');
-                        document.location.href='index.php';
-
-                    </script>
-                ";
-            }
-            
-        }
-    }
-?>

@@ -23,7 +23,7 @@
             $nama=$row['nama'];
 
             if (password_verify($pass, $row['pass'])){
-                $_SESSION['login']="user";
+                $_SESSION['login']=$nama;
                 echo "<script>
                         alert('Selamat datang $nama');
                         document.location.href='./user/index.php';
@@ -41,7 +41,7 @@
             $_SESSION['login']='admin';
             echo "<script>
                         alert('Selamat datang Admin');
-                        document.location.href='./admin/adminter.html';
+                        document.location.href='./admin/index.php';
                          </script> ";
         }
         else{

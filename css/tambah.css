@@ -1,0 +1,326 @@
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #393e3a;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.container{
+    /* background-color: aqua; */
+    background-size: cover;
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    background-color: #414642;
+    box-shadow: inset 0 8px 60px rgb(72, 67, 67),
+                inset 0 8px 8px  rgb(41, 39, 37),
+                inset 0 -4px 60px rgb(53, 46, 46);
+  }
+  .k{
+    background-color: #ff7300;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-shadow:
+    1px 2px 0 rgb(60, 53, 53),
+    1px 2px 0 rgb(60, 53, 53),
+    1px 2px 0 rgb(60, 53, 53);
+  }
+  
+  .name-header{
+    position: absolute;
+    width: 30%;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+  }
+  .name-header p{
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 15px;
+    font-size: 40px;
+  }
+  .header nav{
+    height: 4vh;
+    display: flex;
+    gap: 0 30px;
+    margin-left: 85%;
+  }
+  
+  .header nav a{
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    transition: all .3s;}
+  
+  .header nav a:hover{
+    color: #ec700a;
+  }
+  
+  .btn line{
+    position: relative;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 3px;}
+  .btn{
+    margin-left: 80px;
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .btn line:hover{
+    background-color: white;
+  }
+  
+  
+  /* ==========================
+        bagian menu
+  ========================== */
+  .menu{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 0;
+    transition: all .5s;
+  }
+  
+  .nav ul{
+    display: none;
+  
+  }
+  .menu.aktif{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 30%;
+  }
+  .menu.aktif .nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+  }
+  .menu.aktif .nav ul li a{
+    padding: 0 4px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .3s;
+  }
+  .menu.aktif .nav ul li a:hover{
+    transition: all .2s;
+    font-size: 20px;
+    color : #ec700a;
+    border: #ec700a solid 2px;
+  }
+  
+  .btn.aktif{
+    z-index: 2;
+    position: fixed;
+    margin-left: 86%;
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .btn.aktif line{
+    z-index: 1;
+    background-color: white;
+    margin-left: 80px;
+    width: 30px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 3px;
+  }
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+.tambah{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #c06014;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tambah:hover {
+background: #095484;
+}
+
+form{
+    margin-top: 120px;
+    height: 520px;
+    width: 400px;
+    background-color: grey;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: center;
+    font-family: monospace;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+
+
+/* button{
+    margin-top: 50px;
+    width: 10%;
+    background-color: black;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+.social{
+  margin-top: 30px;
+  display: flex;
+  padding: 5px 10px 10px 120px;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+
+
+/* ===============================
+            footer
+=============================== */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #414642;
+    width: 100%;
+    height: 27vh;
+    margin-top: 50%;
+    text-align: center;
+  }
+  footer ul{
+    padding-left: 300px;
+    margin-left: 22%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    padding-left:90px ;
+    list-style: none;
+    padding: 10px;
+  }
+  footer img{
+    width: 50px;
+  }
+  
+  footer h2{
+    margin-top: 10px;
+  }
+  img.wa{
+    position: relative;
+    right: 47%;
+    width: 10%;
+    
+  }
+  .foll-h2{
+    /* margin-top: 20px; */
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-bottom:4px;
+    border-bottom: #ebebeb solid 2px;
+  }
+  small{
+    color:white;
+    margin-bottom:20px;
+    font-size: 15px;
+  
+  }
+  
+  

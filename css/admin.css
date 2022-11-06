@@ -108,6 +108,7 @@ body{
 
 }
 .menu.aktif{
+  z-index: 1;
   position: fixed;
   display: flex;
   align-items: center;
@@ -137,9 +138,9 @@ body{
 }
 
 .btn.aktif{
-  z-index: 1;
+  z-index: 2;
   position: fixed;
-  margin-left: 84%;
+  margin-left: 86%;
   width: 300px;
   display: flex;
   cursor: pointer;
@@ -156,24 +157,36 @@ body{
   flex-direction: column;
   gap: 3px;
 }
+/* =================================================================== */
+                                /* CENTER */
+/* ====================================================================== */
+
+.center{
+  display: flex;
+  flex-direction: row;
+  /* width: 50%;
+  height: 60vh;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-bottom: 70px; */
+}
+
 
 .wrapper .sidebar{
   background: #c06114;
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 0;
   width: 110px;
   height: 100%;
   padding: 20px 0;
   transition: all 0.5s ease;
-  margin-top: 109px;
+  /* margin-bottom: 100px; */
 }
-
 
 .wrapper .sidebar ul li a{
     display: block;
-    padding: 15px 30px;
+    padding: 35px 30px;
     color: rgb(241, 237, 237);
     font-size: 16px;
     position: relative;
@@ -184,22 +197,36 @@ span{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+.tabel-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* bottom: 150; */
+  width: 100%;
+  height: 100vh;
+  border-collapse: collapse;
+}
 
-table {
-    border-collapse: collapse;
+/* table {
+  
     
   }
   
-  table thead th {
-    text-align: center;
-    background: rgb(207, 199, 199);
-    padding: 5px 10px;
+  .head{
+    background-color: rgb(207, 199, 199);
+  } */
+
+  table thead  {
+    text-align: center; 
+    /* background-col: rgb(207, 199, 199); */
+  padding: 5px 10px;
     color: #f08127;
-  }
-  
-  table tbody tr td {
+  } 
+   
+  /* table tbody tr td {
     padding: 10px;
-    background:  #e7e3e3 ;
+    background-color:  #e7e3e3 ;
     color: #000000;
   }
   
@@ -208,9 +235,8 @@ table {
     color: #e74c3c;
     text-shadow: none;
     font-weight: bold;
-  }
-
-  /* ===============================
+  } */ 
+/* ===============================
             footer
 =============================== */
 footer{
@@ -220,14 +246,13 @@ footer{
   justify-content: center;
   background-color: #414642;
   width: 100%;
-  height: 10%;
+  height: 27vh;
   text-align: center;
 }
-
 footer ul{
-  padding-left: 5px;
-  /* margin-left: 1%; */
-  margin-bottom: 20px;
+  padding-left: 300px;
+  margin-left: 22%;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -236,25 +261,29 @@ footer ul li{
   list-style: none;
   padding: 10px;
 }
-footer i{
-  width: 20px;
-  color:white;
+footer img{
+  width: 50px;
 }
 
+footer h2{
+  margin-top: 10px;
+}
+img.wa{
+  position: relative;
+  right: 47%;
+  width: 10%;
+  
+}
 .foll-h2{
   color: white;
   font-size: 20px;
-  margin-top: 10px;
+  margin-right: 20px;
   padding-bottom:4px;
   border-bottom: #ebebeb solid 2px;
 }
 small{
   color:white;
   margin-bottom:10px;
+  font-size: 15px;
 
 }
-footer h3{
-  position: relative;
-  bottom: 20px;
-}
-

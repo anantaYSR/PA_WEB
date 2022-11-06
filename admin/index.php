@@ -4,8 +4,31 @@
  if(!isset($_SESSION['login'])){
     echo "<script>
         alert('Silahkan login terlebih dahulu');
-        document.location.href='login.php';
+        document.location.href='../index.php';
             </script> ";
+}
+
+if(isset($_POST['sub'])){
+    $masukkan=$_POST['masukan'];
+    $query = "INSERT INTO kritik(masukkan) 
+    VALUES ('$masukkan')";
+    $result = $db->query($query);
+    if($result){
+        echo "
+            <script>
+                alert('Kritik dan Saran anda terkirim');
+            </script>
+        ";
+        
+    }else{
+        echo "
+            <script>
+                alert('Kritik dan saran gagal terkirim');
+
+            </script>
+        ";
+    }
+    
 }
  ?>
 
@@ -29,7 +52,7 @@
         <div class="header">
             <div class="name-header"><p><k class="k">CK</k> PIALAN<p class="g">G</p></p></div>
             <nav>
-                <a href="form.php">FORM</a>
+                <a href="tabel user/tabeluser.php">MANAJEMEN DATA</a>
                 <a href="../logout.php">LOGOUT</a>
             </nav>
             <div class="btn" id="btn">
@@ -95,7 +118,7 @@
         </div>
         <div class="kritik" id="masukan">
             <h2 class="isi-masukan">BERI MASUKAN</h2>
-            <form action="" class="masukan">
+            <form action="" class="masukan" method="post">
                 <input type="text" name="masukan" class="in" placeholder="tulis disini...">
                 <input type="submit" name="sub" class="sub">
             </form>
@@ -103,9 +126,9 @@
         <footer id="footer">
             <h2 class="foll-h2">FOLLOW US</h2>
             <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href=""><img src="../pic/fb.png" alt=""></a></li>
+                <li><a href=""><img src="../pic/ig.png" alt=""></a></li>
+                <li><a href=""><img src="../pic/wa.png" alt="" class="wa"></a></li>
             </ul>
             <small>Copyright 2022 by CK Pialang</small>
         </footer>

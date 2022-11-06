@@ -1,3 +1,9 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+
 .checkbox input {
     position: absolute;
     margin: 21px 10px 0 0;
@@ -5,157 +11,161 @@
     margin-left: -316px;
 }
 
-
 body {
     min-height: 100%;
-    background-color: #414642;
+    background-color: white;
 }
 
+
+
 .container{
-    /* background-color: aqua; */
-    background-size: cover;
-    width: 100%;
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .header{
-    font-family: 'Bree Serif', serif;
-    display: flex;
-    padding: 40px;
-    flex-direction: row;
-    background-color: #414642;
-    box-shadow: inset 0 8px 60px rgb(72, 67, 67),
-                inset 0 8px 8px  rgb(41, 39, 37),
-                inset 0 -4px 60px rgb(53, 46, 46);
-  }
-  .k{
-    background-color: #ff7300;
-    padding: 4px 8px;
-    border-radius: 5px;
-    text-shadow:
-    1px 2px 0 rgb(60, 53, 53),
-    1px 2px 0 rgb(60, 53, 53),
-    1px 2px 0 rgb(60, 53, 53);
-  }
-  
-  .name-header{
-    position: absolute;
-    width: 30%;
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-  }
-  .name-header p{
-    color: rgb(255, 255, 255);
-    position: relative;
-    bottom: 15px;
-    font-size: 40px;
-  }
-  .header nav{
-    height: 4vh;
-    display: flex;
-    gap: 0 30px;
-    margin-left: 85%;
-  }
-  
-  .header nav a{
-    font-size: 19px;
-    text-decoration: none;
-    color: rgb(218, 218, 218);
-    transition: all .3s;}
-  
-  .header nav a:hover{
-    color: #ec700a;
-  }
-  
-  .btn line{
-    position: relative;
-    width: 30px;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    padding: 3px;}
-  .btn{
-    margin-left: 80px;
-    width: 300px;
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 3px;
-  }
-  .btn line:hover{
-    background-color: white;
-  }
-  
-  
-  /* ==========================
-        bagian menu
-  ========================== */
-  .menu{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(48, 48, 48);
-    width: 100%;
-    height: 0;
-    transition: all .5s;
-  }
-  
-  .nav ul{
-    display: none;
-  
-  }
-  .menu.aktif{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(48, 48, 48);
-    width: 100%;
-    height: 30%;
-  }
-  .menu.aktif .nav ul{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-  }
-  .menu.aktif .nav ul li a{
-    padding: 0 4px;
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    transition: all .3s;
-  }
-  .menu.aktif .nav ul li a:hover{
-    transition: all .2s;
-    font-size: 20px;
-    color : #ec700a;
-    border: #ec700a solid 2px;
-  }
-  
-  .btn.aktif{
-    z-index: 1;
-    position: fixed;
-    margin-left: 84%;
-    width: 300px;
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 3px;
-  }
-  .btn.aktif line{
-    z-index: 1;
-    background-color: white;
-    margin-left: 80px;
-    width: 30px;
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 3px;
-  }
+  /* background-color: aqua; */
+  background-size: cover;
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header{
+  font-family: 'Bree Serif', serif;
+  display: flex;
+  padding: 40px;
+  flex-direction: row;
+  background-color: #414642;
+  box-shadow: inset 0 8px 60px rgb(72, 67, 67),
+              inset 0 8px 8px  rgb(41, 39, 37),
+              inset 0 -4px 60px rgb(53, 46, 46);
+}
+.k{
+  background-color: #ff7300;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-shadow:
+  1px 2px 0 rgb(60, 53, 53),
+  1px 2px 0 rgb(60, 53, 53),
+  1px 2px 0 rgb(60, 53, 53);
+}
+
+.name-header{
+  position: absolute;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+}
+.name-header p{
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 15px;
+  font-size: 40px;
+}
+.header nav{
+  height: 4vh;
+  display: flex;
+  gap: 0 30px;
+  margin-left: 75%;
+}
+
+.header nav a{
+  font-size: 19px;
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+  transition: all .3s;}
+
+.header nav a:hover{
+  color: #ec700a;
+}
+
+.btn line{
+  position: relative;
+  width: 30px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding: 3px;}
+.btn{
+  margin-left: 80px;
+  width: 300px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 3px;
+}
+.btn line:hover{
+  background-color: white;
+}
+
+
+/* ==========================
+      bagian menu
+========================== */
+.menu{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(48, 48, 48);
+  width: 100%;
+  height: 0;
+  transition: all .5s;
+}
+
+.nav ul{
+  display: none;
+
+}
+.menu.aktif{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(48, 48, 48);
+  width: 100%;
+  height: 35%;
+  z-index: 8;
+}
+.menu.aktif .nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.menu.aktif .nav ul li a{
+  padding: 0 4px;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all .3s;
+}
+.menu.aktif .nav ul li a:hover{
+  transition: all .2s;
+  font-size: 20px;
+  color : #ec700a;
+  border: #ec700a solid 2px;
+}
+
+.btn.aktif{
+  z-index: 9;
+  position: fixed;
+  margin-left: 84%;
+  width: 300px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.btn.aktif line{
+  /* z-index: 150; */
+  background-color: white;
+  margin-left: 80px;
+  width: 30px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 3px;
+}
+
 
 
   p{
@@ -220,6 +230,7 @@ form {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* z-index: -1; */
     
 }
 
@@ -227,6 +238,7 @@ form {
     content: "";
     background-color: #414642d8;
     position: absolute;
+    /* z-index: 0; */
     width: 100%;
     height: 100%;
     background-image: url('../pic/golden.jpg');
@@ -275,46 +287,46 @@ i{
             footer
 =============================== */
 footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #414642;
-    width: 100%;
-    height: 10%;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #414642;
+  width: 100%;
+  height: 27vh;
+  text-align: center;
 }
-
 footer ul{
-    padding-left: 5px;
-    /* margin-left: 1%; */
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
+  padding-left: 300px;
+  margin-left: 22%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
 }
 footer ul li{
-    padding-left:90px ;
-    list-style: none;
-    padding: 10px;
+  padding-left:90px ;
+  list-style: none;
+  padding: 10px;
 }
-footer i{
-    width: 20px;
-    color:white;
+footer img{
+  width: 50px;
 }
-
+img.wa{
+  position: relative;
+  right: 47%;
+  width: 10%;
+  
+}
 .foll-h2{
-    color: white;
-    font-size: 20px;
-    margin-top: 10px;
-    padding-bottom:4px;
-    border-bottom: #ebebeb solid 2px;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  padding-bottom:4px;
+  border-bottom: #ebebeb solid 2px;
 }
 small{
-    color:white;
-    margin-bottom:10px;
+  color:white;
+  margin-bottom:10px;
+  font-size: 15px;
 
-}
-footer h3{
-    position: relative;
-    bottom: 20px;
 }

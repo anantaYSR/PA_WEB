@@ -1,3 +1,34 @@
+<?php
+require 'konfik.php';
+
+if(isset($_POST['sub'])){
+        $masukkan=$_POST['masukan'];
+        $query = "INSERT INTO kritik(masukkan) 
+        VALUES ('$masukkan')";
+        $result = $db->query($query);
+        if($result){
+            echo "
+                <script>
+                    alert('Kritik dan Saran anda terkirim');
+                </script>
+            ";
+            
+        }else{
+            echo "
+                <script>
+                    alert('Kritik dan saran gagal terkirim');
+
+                </script>
+            ";
+        }
+        
+    }
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +38,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>PIALANG HOME PAGE</title>
 </head>
@@ -83,7 +113,7 @@
         </div>
         <div class="kritik" id="masukan">
             <h2 class="isi-masukan">BERI MASUKAN</h2>
-            <form action="" class="masukan">
+            <form action="" class="masukan" method="post">
                 <input type="text" name="masukan" class="in" placeholder="tulis disini...">
                 <input type="submit" name="sub" class="sub">
             </form>
@@ -91,13 +121,14 @@
         <footer id="footer">
             <h2 class="foll-h2">FOLLOW US</h2>
             <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href=""><img src="pic/fb.png" alt=""></a></li>
+                <li><a href=""><img src="pic/ig.png" alt=""></a></li>
+                <li><a href=""><img src="pic/wa.png" alt="" class="wa"></a></li>
             </ul>
             <small>Copyright 2022 by CK Pialang</small>
         </footer>
     </div> <!--end of container line-->
+
 </body>
 <script src="js/index.js"></script>
 </html>
