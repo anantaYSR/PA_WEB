@@ -130,8 +130,8 @@
                         <td> <?=$row['tipe']?> </td>
                         <td> <?=$row['jumlah']?> </td>
                         <td> <?=$row['lama_waktu']?> </td>
-                        <td ><a  href="edit_investor.php?id=<?=$row['id']?>">Edit</a></td>
-                        <td><a  href="hapus_investor.php?id=<?=$row['id']?>">Hapus</a></td>
+                        <td><a href="edit_investor.php?id=<?=$row['id']?>">Edit</a></td>
+                        <td><a href="hapus_investor.php?id=<?=$row['id']?>">Hapus</a></td>
                         </tr>
                     <?php
                         $i++;}
