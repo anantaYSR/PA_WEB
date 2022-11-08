@@ -37,6 +37,7 @@ if(isset($_POST['sub'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>PIALANG HOME PAGE</title>
@@ -47,8 +48,9 @@ if(isset($_POST['sub'])){
         <div class="header">
             <div class="name-header"><p><k class="k">CK</k> PIALAN<p class="g">G</p></p></div>
             <nav>
-                <a href="login.php">LOGIN</a>
-                <a href="register.php">REGISTER</a>
+                <a href="login.php"><i class="material-icons">login</i> <font size="3">Login</font></a><br>
+                <a href="register.php"><i class="material-icons">verified_user</i> <font size="3">register</font></a>
+
             </nav>
             <div class="btn" id="btn">
                 <line></line>
