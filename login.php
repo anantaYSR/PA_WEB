@@ -68,7 +68,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         input[type="submit"]{
-            margin-top: 50px;
+            margin-top: 80px;
             width: 100%;
             height:50px;
             background-color: #C06014;
@@ -99,7 +99,7 @@
                 <a href="register.php">Register</a>
         </p><br><br><br><br>
 
-        <center><a href="index.php"><i class="material-icons">home</i> <br><font size="2">BackToHome</font></a></center> 
+        <center><a href="index.php"><br><font size="2">BackToHome</font></a></center> 
 
 
     </form>

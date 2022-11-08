@@ -45,6 +45,7 @@ $row = mysqli_fetch_array($result);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/user.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -58,9 +59,9 @@ $row = mysqli_fetch_array($result);
             <div class="name-header"><p><k class="k">CK</k> PIALAN<p class="g">G</p></p></div>
 
             <nav>
-                <a href="form.php">FORM</a>
-                <a href="update.php?id=<?=$row['id']?>">UBAH</a>
-                <a href="../logout.php">LOGOUT</a>
+                <a href="form.php"><i class="material-icons">assignment_returned</i><font size="3">FORM</font></a>
+                <a href="update.php?id=<?=$row['id']?>"><i class="material-icons">cached</i><font size="3">UBAH</font></a>
+                <a href="../logout.php"><i class="material-icons">logout</i><font size="3">LOGOUT</font></a>
             </nav>
             <div class="btn" id="btn">
                 <line></line>

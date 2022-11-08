@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         input[type="submit"]{
-            margin-top: 20px;
+            margin-top: 45px;
             width: 105%;
             height:50px;
             background-color: #C06014;
@@ -36,7 +36,7 @@
         <p>Sudah punya akun?
                 <a href="login.php">Login</a>
         </p><br>
-        <center><a href="index.php"><i class="material-icons">home</i> <br><font size="2">BackToHome</font></a></center> 
+        <center><a href="index.php"><br><font size="2">BackToHome</font></a></center> 
 
     </form>
 </body>
