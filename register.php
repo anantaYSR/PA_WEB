@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/login2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         input[type="submit"]{
-            margin-top: 50px;
-            width: 100%;
+            margin-top: 20px;
+            width: 105%;
             height:50px;
             background-color: #C06014;
             color: #ffffff;
@@ -22,8 +23,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="background">
-        
+    <div class="background">    
     </div>
     <form action="" method="post">
         <h3>Register</h3>
@@ -35,7 +35,9 @@
         <input type="submit" name="btn" class="submit" value="Registrasi">
         <p>Sudah punya akun?
                 <a href="login.php">Login</a>
-        </p>
+        </p><br>
+        <center><a href="index.php"><i class="material-icons">home</i> <br><font size="2">BackToHome</font></a></center> 
+
     </form>
 </body>
 </body>

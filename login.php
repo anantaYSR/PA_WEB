@@ -65,6 +65,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/login2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         input[type="submit"]{
             margin-top: 50px;
@@ -96,7 +97,11 @@
         <input type="submit" name="btn" class="submit" value="LOGIN">
         <p>Belum memiliki akun?
                 <a href="register.php">Register</a>
-        </p>
+        </p><br><br><br><br>
+
+        <center><a href="index.php"><i class="material-icons">home</i> <br><font size="2">BackToHome</font></a></center> 
+
+
     </form>
 </body>
 </body>
