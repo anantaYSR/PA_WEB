@@ -50,38 +50,37 @@
             </div>
         </div>
         <div class="center">
-
-            <div class="wrapper">
+        <div class="wrapper">
                 <div class="sidebar">
                     <ul>
-                    <li>
-                        <a href="../tabel user/tabeluser.php">
-                            <i class="material-icons">web</i>
-                            <span>User</span> 
-                        </a>
+                        <li>
+                            <a href="../tabel user/tabeluser.php">
+                                <i class="material-icons">supervisor_account</i>
+                                <span>User</span>
+                            </a>
                         </li>
-                    <li>
-                        <a href="../tabel investor/tbl_investor.php">
-                            <i class="material-icons">web</i>
-                            <span>Daftar Investor</span>
-                            
-                        </a>
-                    </li>
+                        <li>
+                            <a href="../tabel investor/tbl_investor.php">
+                                <i class="material-icons">receipt</i>
+                                <span>Daftar Investor</span>
+
+                            </a>
+                        </li>
                         <li>
                             <a href="../tabel form/tabelform.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">loyalty</i>
                                 <span>Calon Investor</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel relasi/tbl_perusahaan.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">assessment</i>
                                 <span>Relasi</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel kritik/tabelkritik.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">build</i>
                                 <span>Masukkan</span>
                             </a>
                         </li>
@@ -90,7 +89,7 @@
             </div>
             <div class="tabel-center">
                 <div class="tambah">
-                    <a href="tambahrelasi.php">Tambah Pengalaman</a>
+                    <a href="tambahrelasi.php"><i  class="material-icons">input</i> <br> Tambah data</a>
                 </div>
                 <table id="tabel-data"  class="display">
                     <thead>
@@ -117,8 +116,8 @@
                         <td> <?=$row['bidang']?> </td>
                         <td> <?=$row['tahun']?> </td>
                         <td> <?=$row['lama_kerjasama']?> </td>
-                        <td ><a  href="ubahrelasi.php?id=<?=$row['id']?>">Edit</a></td>
-                        <td><a  href="hapusrelasi.php?id=<?=$row['id']?>">Hapus</a></td>
+                        <td ><a  href="ubahrelasi.php?id=<?=$row['id']?>"><i class="material-icons">cached</i></a></td>
+                        <td><a  href="hapusrelasi.php?id=<?=$row['id']?>"><i class="material-icons">delete</i></a></td>
                         </tr>
                     <?php
                         $i++;}

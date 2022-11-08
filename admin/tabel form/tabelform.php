@@ -58,38 +58,37 @@
             </div>
         </div>
         <div class="center">
-
-            <div class="wrapper">
+        <div class="wrapper">
                 <div class="sidebar">
                     <ul>
-                    <li>
-                        <a href="../tabel user/tabeluser.php">
-                            <i class="material-icons">web</i>
-                            <span>User</span> 
-                        </a>
+                        <li>
+                            <a href="../tabel user/tabeluser.php">
+                                <i class="material-icons">supervisor_account</i>
+                                <span>User</span>
+                            </a>
                         </li>
-                    <li>
-                        <a href="../tabel investor/tbl_investor.php">
-                            <i class="material-icons">web</i>
-                            <span>Daftar Investor</span>
-                            
-                        </a>
-                    </li>
+                        <li>
+                            <a href="../tabel investor/tbl_investor.php">
+                                <i class="material-icons">receipt</i>
+                                <span>Daftar Investor</span>
+
+                            </a>
+                        </li>
                         <li>
                             <a href="../tabel form/tabelform.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">loyalty</i>
                                 <span>Calon Investor</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel relasi/tbl_perusahaan.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">assessment</i>
                                 <span>Relasi</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel kritik/tabelkritik.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">build</i>
                                 <span>Masukkan</span>
                             </a>
                         </li>

@@ -1,7 +1,7 @@
 <?php
-    require '../../konfik.php';
+require '../../konfik.php';
 
-    $result = mysqli_query($db, "SELECT * FROM kritik");
+$result = mysqli_query($db, "SELECT * FROM kritik");
 ?>
 
 
@@ -10,7 +10,7 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../css/admin.css">
@@ -21,7 +21,7 @@
     <script type="text/javascript" src="../../tabel/jquery.js"></script>
     <script type="text/javascript" src="../../tabel/dataTabel/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../tabel/dataTabel/css/jquery.dataTables.min.css">
-    
+
 
 
     <title>Document</title>
@@ -30,11 +30,16 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="name-header"><p><k class="k">CK</k> PIALAN<p class="g">G</p></p></div>
+            <div class="name-header">
+                <p>
+                    <k class="k">CK</k> PIALAN
+                <p class="g">G</p>
+                </p>
+            </div>
             <nav>
-            <a href="../index.php">
-                <i class="material-icons">home</i>
-            </a>
+                <a href="../index.php">
+                    <i class="material-icons">home</i>
+                </a>
                 <a href="../../logout.php"></a>
                 <a href="#">
                     <i class="material-icons">logout</i>
@@ -58,38 +63,37 @@
             </div>
         </div>
         <div class="center">
-
             <div class="wrapper">
                 <div class="sidebar">
                     <ul>
-                    <li>
-                        <a href="../tabel user/tabeluser.php">
-                            <i class="material-icons">web</i>
-                            <span>User</span> 
-                        </a>
+                        <li>
+                            <a href="../tabel user/tabeluser.php">
+                                <i class="material-icons">supervisor_account</i>
+                                <span>User</span>
+                            </a>
                         </li>
-                    <li>
-                        <a href="../tabel investor/tbl_investor.php">
-                            <i class="material-icons">web</i>
-                            <span>Daftar Investor</span>
-                            
-                        </a>
-                    </li>
+                        <li>
+                            <a href="../tabel investor/tbl_investor.php">
+                                <i class="material-icons">receipt</i>
+                                <span>Daftar Investor</span>
+
+                            </a>
+                        </li>
                         <li>
                             <a href="../tabel form/tabelform.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">loyalty</i>
                                 <span>Calon Investor</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel relasi/tbl_perusahaan.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">assessment</i>
                                 <span>Relasi</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel kritik/tabelkritik.php">
-                                <i class="material-icons">web</i>
+                                <i class="material-icons">build</i>
                                 <span>Masukkan</span>
                             </a>
                         </li>
@@ -105,20 +109,21 @@
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    
+
                     <tbody>
-                    <?php 
+                        <?php
                         $i = 1;
-                        while($row = mysqli_fetch_array($result)){
-                    ?>
-                        <tr>
-                        <td> <?=$i; ?> </td>
-                        <td> <?=$row['masukkan']?> </td>
-                        <td><a  href="hapusmasukkan.php?id=<?=$row['id']?>">hapus</a></td>
-                        </tr>
-                    <?php
-                        $i++;}
-                    ?>                        
+                        while ($row = mysqli_fetch_array($result)) {
+                        ?>
+                            <tr>
+                                <td> <?= $i; ?> </td>
+                                <td> <?= $row['masukkan'] ?> </td>
+                                <td><a href="hapusmasukkan.php?id=<?= $row['id'] ?>"><i class="material-icons">delete</i></a></td>
+                            </tr>
+                        <?php
+                            $i++;
+                        }
+                        ?>
                     </tbody>
 
                 </table>
@@ -135,16 +140,16 @@
         </footer>
     </div>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('#tabel-data').DataTable({
-                "ordering":false,
-                "info":false
-            }
+                    "ordering": false,
+                    "info": false
+                }
 
             );
         });
     </script>
 </body>
 <script src="../../js/index.js"></script>
-</html>
 
+</html>
