@@ -1,0 +1,232 @@
+[33mcommit 50b8a697a5162788543345bb57085972188d914f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Wed Nov 9 04:01:57 2022 +0800
+
+    penambahan fitur home di login dan register
+
+[33mcommit d60d3d0028dc62fbf177f925c2d0a49805ed3e5f[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Wed Nov 9 03:27:09 2022 +0800
+
+    penambahan Icon
+
+[33mcommit 6337aa594e698de3846d65b016f3c065db576c12[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Wed Nov 9 03:01:22 2022 +0800
+
+    penambahan icon index.php
+
+[33mcommit 03cdbe69a6d2b60b9414feae1c4a6682489adb0d[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Wed Nov 9 02:36:58 2022 +0800
+
+    pernamabahan icon
+
+[33mcommit ffc40ba641da9abaf59f2dcc90ab08ac7d1448f1[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Mon Nov 7 23:59:28 2022 +0800
+
+    perbaikan sedikit syntax
+
+[33mcommit e7e5500be0af46d326cd1f46f84b7db0ca0ca72a[m
+Author: Hernirf <herby.jan1102@gmail.com>
+Date:   Sun Nov 6 10:01:18 2022 +0800
+
+    tambah database
+
+[33mcommit 00c8c5e73a581a0586610287e6877423b5c637ce[m
+Author: Hernirf <herby.jan1102@gmail.com>
+Date:   Sun Nov 6 09:59:11 2022 +0800
+
+    php keseluruhan
+
+[33mcommit a12d5340997b32ec2aa7b71949ab731a802f2bb9[m
+Merge: 6a00faa 7be9b67
+Author: Hernirf <herby.jan1102@gmail.com>
+Date:   Sat Nov 5 15:35:32 2022 +0800
+
+    Merge branch 'main' of https://github.com/anantaYSR/PA_WEB
+
+[33mcommit 6a00faacb437f337aeab3beed52a1cb509c2f133[m
+Author: Hernirf <herby.jan1102@gmail.com>
+Date:   Sat Nov 5 15:35:29 2022 +0800
+
+    php update
+
+[33mcommit 7be9b673a94d506a50dbbe0dce5e5c703bec2760[m
+Author: ananta yusra <93465182+anantaYSR@users.noreply.github.com>
+Date:   Sat Nov 5 04:13:06 2022 +0800
+
+    Update README.md
+
+[33mcommit 1fda27e25148348f950af9d1577225a17736946f[m
+Author: ananta yusra <93465182+anantaYSR@users.noreply.github.com>
+Date:   Sat Nov 5 03:54:33 2022 +0800
+
+    Create README.md
+
+[33mcommit 7eb33987236b928efb0afb8f25291b90ddcdb87b[m
+Author: Avinezi24 <muhamrahman23@gmail.com>
+Date:   Sat Nov 5 03:50:01 2022 +0800
+
+    ubah index.css
+
+[33mcommit 0f2f8f69f9b2ea0e8041623872ecf63bfb6b27ea[m
+Merge: a8cd40b 7a751ae
+Author: Avinezi24 <muhamrahman23@gmail.com>
+Date:   Sat Nov 5 03:43:24 2022 +0800
+
+    Merge branch 'main' of https://github.com/anantaYSR/PA_WEB
+
+[33mcommit a8cd40bc2c08cb74010e8766947931ff3174daeb[m
+Author: Avinezi24 <muhamrahman23@gmail.com>
+Date:   Sat Nov 5 03:43:18 2022 +0800
+
+    push
+
+[33mcommit 7a751aee7c599c602c17e9476f3023433fd512d7[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 03:17:54 2022 +0800
+
+    perbaikan posisi folder
+
+[33mcommit 30612457c0e300290c48b7fa95555ac9aa49002e[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 03:13:24 2022 +0800
+
+    hapus line kosong form.css
+
+[33mcommit f1bb3bf0e8e82264479a3457ad24684b54fd01b8[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 03:12:24 2022 +0800
+
+    perbaikan checkbox page form
+
+[33mcommit b3e48ad370157289d143de5cf1fac44a8105a476[m
+Merge: 47124aa 361aa35
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 02:59:52 2022 +0800
+
+    Merge branch 'main' of https://github.com/anantaYSR/PA_WEB
+
+[33mcommit 47124aa2c079b628cc21593a4bc4ab41f2a00b75[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 02:59:45 2022 +0800
+
+    penambahan image dan perbaikan page form
+
+[33mcommit 361aa3542014987933e6c6e13fb1a875231a535e[m
+Author: Avinezi24 <muhamrahman23@gmail.com>
+Date:   Sat Nov 5 02:47:26 2022 +0800
+
+    index
+
+[33mcommit 3af0ecfb987474333ddeea313217b8dca85d0c20[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 02:42:36 2022 +0800
+
+    perbaikan tabel dan penambahan icon
+
+[33mcommit 7212b05860da3a0dbdbc5a9754b3b6e0e4b8568d[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 02:16:10 2022 +0800
+
+    perbaikan tabel admin page
+
+[33mcommit c9c0147740c77c201242abc46c69d188a2d14406[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Sat Nov 5 01:43:48 2022 +0800
+
+    new css admin
+
+[33mcommit 3da24da4d247b315ab871511bc922cb31d9f8cc7[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Nov 4 00:41:07 2022 +0800
+
+    page tabel
+
+[33mcommit 20a766182c238a9b61053aa4cd93921026b2e868[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Nov 4 00:30:05 2022 +0800
+
+    admin page
+
+[33mcommit 82b5c0fbe0895391fc261287238b53f9150c49c7[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Thu Nov 3 23:40:29 2022 +0800
+
+    perubahan tittle
+
+[33mcommit 53614557f9c1a9d96cb61f24fd29b854619cfe83[m
+Merge: 0d7f56f f9c3b20
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Thu Nov 3 23:31:27 2022 +0800
+
+    Merge branch 'main' of https://github.com/anantaYSR/PA_WEB
+
+[33mcommit 0d7f56fa33d4f726efc19dfa50aa3245b7f5d5ad[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Thu Nov 3 23:31:25 2022 +0800
+
+    page form
+
+[33mcommit f9c3b20ebbf1137562a56928aadef1b2b3fc9d45[m
+Author: Hernirf <herby.jan1102@gmail.com>
+Date:   Thu Nov 3 22:57:20 2022 +0800
+
+    php login dan regis
+
+[33mcommit a37524eafd22697064176278b2ff5d66db63d39c[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Wed Nov 2 23:48:05 2022 +0800
+
+    login dan register page
+
+[33mcommit 24eb612bde1a5ce895f7b3ecd62d099c46e38cb5[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Oct 28 16:16:51 2022 +0800
+
+    testing
+
+[33mcommit 130e9c6e5b4f366f93aced1b85997427d95878a2[m
+Author: Hernirf <herby.jan1102@gmail.com>
+Date:   Fri Oct 28 16:16:17 2022 +0800
+
+    hmm
+
+[33mcommit 19909aa2f77dc2876440346cade7a59a598f260f[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Oct 28 16:15:19 2022 +0800
+
+    new
+
+[33mcommit feb91a94731ea361513588f5314e26dfdfb262a0[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Oct 28 16:12:30 2022 +0800
+
+    testing
+
+[33mcommit f7dba609dd34c5398ae65620dc0513be7a92326f[m
+Merge: 0fb0f50 05cf25c
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Oct 28 16:10:38 2022 +0800
+
+    Merge branch 'main' of https://github.com/anantaYSR/PA_WEB
+
+[33mcommit 0fb0f5081b9115bf3164425144665078d5b0e513[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Oct 28 16:10:09 2022 +0800
+
+    tambah halaman service
+
+[33mcommit 05cf25c1a189633e87bc0acbca42c3fca94420e8[m
+Author: Avinezi24 <muhamrahman23@gmail.com>
+Date:   Fri Oct 28 16:05:48 2022 +0800
+
+    tambah about
+
+[33mcommit d95acdeebef6124935a088e87b3117609a794d6f[m
+Author: anantaYSR <anantayusra01@gmail.com>
+Date:   Fri Oct 28 16:01:55 2022 +0800
+
+    init

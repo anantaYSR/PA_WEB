@@ -189,6 +189,30 @@ body{
 
 }
 
+/* ==========================
+          syarat
+========================== */
+
+.syarat ul{
+    margin-left: 3%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+.syarat .isi{
+    padding-top: 10px;
+}
+.syarat ul li {
+    padding: 5px;
+    margin-left: 10%;
+    max-width: 80%;
+    list-style: none;
+    background-color: #6d746f;
+    border-radius: 10px;
+    font-size: 20px;
+}
 
 
 /* ====================================
@@ -322,30 +346,30 @@ footer{
 }
 footer ul{
     padding-left: 300px;
-    margin-left: 22%;
-    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
 }
 footer ul li{
     padding-left:90px ;
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 footer img{
-    width: 50px;
+    width: 40px;
 }
 img.wa{
     position: relative;
     right: 47%;
-    width: 10%;
+    width: 9.5%;
     
 }
 .foll-h2{
+    position: relative;
     color: white;
-    font-size: 20px;
-    margin-right: 20px;
-    padding-bottom:4px;
+    font-size: 16px;
+    bottom: 10px;
     border-bottom: #ebebeb solid 2px;
 }
 small{
@@ -454,7 +478,7 @@ small{
     }
     img.wa{
         margin-left: 35px;
-        width: 70px;
+        width: 13%;
     }
 }
 
