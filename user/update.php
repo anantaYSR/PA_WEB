@@ -1,5 +1,12 @@
 <?php
+session_start();
 require '../konfik.php';
+if(!isset($_SESSION['login'])){
+    echo "<script>
+        alert('Silahkan login terlebih dahulu');
+        document.location.href='../login.php';
+            </script> ";
+}
 
 if(isset($_GET['id'])){
     $id=$_GET['id'];
@@ -73,8 +80,7 @@ if(isset($_POST['btn'])){
             <a href="index.php">
                 <i class="material-icons">home</i>
             </a>
-                <a href=""></a>
-                <a href="#">
+                <a href="../logout.php">
                     <i class="material-icons">logout</i>
                 </a>
             </nav>
@@ -87,11 +93,11 @@ if(isset($_POST['btn'])){
         <div class="menu">
             <div class="nav">
                 <ul>
-                    <li><a href="../index.html #abt">ABOUT</a></li>
-                    <li><a href="#syt">PERSYARATAN</a></li>
-                    <li><a href="#fbk">FEEDBACK </a></li>
-                    <li><a href="#masukan">MASUKAN</a></li>
-                    <li><a href="#follow">FOLLOW</a></li>
+                    <li><a href="index.php #abt">ABOUT</a></li>
+                    <li><a href="index.php #syt">PERSYARATAN</a></li>
+                    <li><a href="index.php #fbk">FEEDBACK </a></li>
+                    <li><a href="index.php #masukan">MASUKAN</a></li>
+                    <li><a href="index.php #follow">FOLLOW</a></li>
                 </ul>
             </div>
         </div>

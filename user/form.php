@@ -5,26 +5,10 @@
         if(!isset($_SESSION['login'])){
             echo "<script>
                 alert('Silahkan login terlebih dahulu');
-                document.location.href='login.php';
+                document.location.href='../login.php';
                     </script> ";
         }
-
-    // if(isset($_SESSION['login'])){
-    //     if($_SESSION['login']=='admin'){
-    //         header('location: ./admin/index.php');
-    //         exit;
-    //     }
-    //     elseif($_SESSION['login']=='user'){
-    //         // header("location: index.php");
-    //     }
-    // }
-    // else{
-    //     echo "<script>
-    //     alert('Silahkan login terlebih dahulu');
-    //     document.location.href='../login.php';
-    //         </script> ";
-    // }
-
+        
     if(isset($_POST['btn'])){
         $nama=$_POST['nama'];
         $email=$_POST['email'];

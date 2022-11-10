@@ -346,30 +346,30 @@ footer{
 }
 footer ul{
     padding-left: 300px;
-    margin-left: 20%;
-    margin-bottom: 5px;
+    margin-left: 22%;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
 }
 footer ul li{
     padding-left:90px ;
     list-style: none;
-    padding: 5px;
+    padding: 10px;
 }
 footer img{
-    width: 40px;
+    width: 50px;
 }
 img.wa{
     position: relative;
     right: 47%;
-    width: 9.5%;
+    width: 10%;
     
 }
 .foll-h2{
-    position: relative;
     color: white;
-    font-size: 16px;
-    bottom: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-bottom:4px;
     border-bottom: #ebebeb solid 2px;
 }
 small{

@@ -4,7 +4,7 @@
  if(!isset($_SESSION['login'])){
     echo "<script>
         alert('Silahkan login terlebih dahulu');
-        document.location.href='login.php';
+        document.location.href='../login.php';
             </script> ";
 }
 
@@ -94,7 +94,15 @@ $row = mysqli_fetch_array($result);
         </div>
         <div class="syarat" id="syt">
             <h2>PERSYARATAN</h2>
-            <p class="isi"></p>
+            <p class="isi">
+                <ul>
+                    <li>Dalam jangka waktu kerjasama yang telah di sepakati tidak boleh mencabut kerjasama secara sepihak atau akan di kenakan denda</li>
+                    <li>Tidak dapat melakukan transaksi atapun tindakan secara sepihak atau akan dikenakan sangsi yang berlaku</li>
+                    <li>Setiap tindakan harus mendapat persetujuan kedua belah pihak</li>
+                    <li>Pembagian keuntungan akan di sepakati kemudian pada rapat akhir</li>
+                    <li>Persetujuan wajib membawa minimal 1 sekertaris sebagai saksi</li>
+                </ul>
+            </p>
         </div>
         <div class="fnf" id="fbk">
             <h2>FEEDBACK DAN FASILITAS</h2>

@@ -190,6 +190,32 @@ body{
 }
 
 
+/* ==========================
+          syarat
+========================== */
+
+.syarat ul{
+    margin-left: 3%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+.syarat .isi{
+    padding-top: 10px;
+}
+.syarat ul li {
+    padding: 5px;
+    margin-left: 10%;
+    max-width: 80%;
+    list-style: none;
+    background-color: #6d746f;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
 
 /* ====================================
              FEEDBACK
@@ -354,3 +380,109 @@ small{
     font-size: 15px;
 
 }
+
+@media ((min-width : 720px ) and (max-width : 992px)) {
+    .container{
+        /* background-color: aqua; */
+        background-size: cover;
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header{
+        font-family: 'Bree Serif', serif;
+        display: flex;
+        padding: 30px;
+        flex-direction: row;
+        background-color: #414642;
+        box-shadow: inset 0 8px 60px rgb(72, 67, 67),
+                    inset 0 8px 8px  rgb(41, 39, 37),
+                    inset 0 -4px 60px rgb(53, 46, 46);
+    }
+    .k{
+        background-color: #ff7300;
+        padding: 4px 8px;
+        border-radius: 5px;
+        text-shadow:
+        1px 2px 0 rgb(60, 53, 53),
+        1px 2px 0 rgb(60, 53, 53),
+        1px 2px 0 rgb(60, 53, 53);
+    }
+    
+    .name-header{
+        font-size: 10px;
+        position: absolute;
+        width: 40%;
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+    }
+    .name-header p{
+        color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 15px;
+        font-size: 40px;
+    }
+    .header nav{
+        height: 4vh;
+        display: flex;
+        gap: 0 30px;
+        margin-left: 55%;
+    }
+    
+    .header nav a{
+        font-size: 19px;
+        text-decoration: none;
+        color: rgb(218, 218, 218);
+        transition: all .3s;}
+    
+    .header nav a:hover{
+        color: #ec700a;
+    }
+    
+    .btn line{
+        position: relative;
+        width: 30px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        padding: 3px;}
+    .btn{
+        margin-left: 80px;
+        width: 300px;
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .btn line:hover{
+        background-color: white;
+    }
+
+    .btn.aktif{
+        margin-left: 76.3%;
+    }
+
+    .isi{
+        text-align: center;
+    }
+    
+    .kotak{
+        padding: 25px;
+    }
+    footer ul{
+        padding-left: 300px;
+        margin-right:50%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    img.wa{
+        margin-left: 35px;
+        width: 13%;
+    }
+}
+
+
+

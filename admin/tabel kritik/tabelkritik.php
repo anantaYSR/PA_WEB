@@ -1,5 +1,13 @@
 <?php
+session_start();
 require '../../konfik.php';
+
+if(!isset($_SESSION['login'])){
+    echo "<script>
+        alert('Silahkan login terlebih dahulu');
+        document.location.href='../../index.php';
+            </script> ";
+}
 
 $result = mysqli_query($db, "SELECT * FROM kritik");
 ?>
@@ -38,11 +46,10 @@ $result = mysqli_query($db, "SELECT * FROM kritik");
             </div>
             <nav>
                 <a href="../index.php">
-                    <i class="material-icons">home</i>
+                    <i class="material-icons">home</i><font size="2">Home</font>
                 </a>
-                <a href="../../logout.php"></a>
-                <a href="#">
-                    <i class="material-icons">logout</i>
+                <a href="../../logout.php">
+                    <i class="material-icons">logout</i><font size="2">Logout</font>
                 </a>
             </nav>
             <div class="btn" id="btn">
@@ -106,7 +113,7 @@ $result = mysqli_query($db, "SELECT * FROM kritik");
                         <tr>
                             <th>No</th>
                             <th>Isi masukkan</th>
-                            <th>Aksi</th>
+                            <th></th>
                         </tr>
                     </thead>
 
