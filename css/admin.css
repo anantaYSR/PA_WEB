@@ -1,16 +1,15 @@
+
 *{
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body{
-    background: white;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  
 }
-
 .container{
   /* background-color: aqua; */
   background-size: cover;
@@ -57,7 +56,8 @@ body{
   height: 4vh;
   display: flex;
   gap: 0 30px;
-  margin-left: 85%;
+  margin-left: 75%;
+  margin-bottom: 20px;
 }
 
 .header nav a{
@@ -76,7 +76,6 @@ body{
   background-color: rgb(0, 0, 0);
   display: flex;
   padding: 3px;}
-
 .btn{
   margin-left: 80px;
   width: 300px;
@@ -89,9 +88,6 @@ body{
   background-color: white;
 }
 
-.material-icons{
-  text-decoration: none;
-}
 
 /* ==========================
       bagian menu
@@ -112,14 +108,13 @@ body{
 
 }
 .menu.aktif{
-  z-index: 1;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(48, 48, 48);
   width: 100%;
-  height: 30%;
+  height: 60%;
 }
 .menu.aktif .nav ul{
   display: flex;
@@ -142,9 +137,9 @@ body{
 }
 
 .btn.aktif{
-  z-index: 2;
+  z-index: 1;
   position: fixed;
-  margin-left: 86%;
+  margin-left: 84%;
   width: 300px;
   display: flex;
   cursor: pointer;
@@ -161,67 +156,185 @@ body{
   flex-direction: column;
   gap: 3px;
 }
-/* =================================================================== */
-                                /* CENTER */
-/* ====================================================================== */
 
-.center{
-  display: flex;
-  flex-direction: row;
-  /* width: 50%;
+  /* ==================
+      inner area
+  ================== */
+.inner{
+  background-size: cover;
+  background-image: url('../pic/bg2.jpeg');
+  background-color: #c06014;
+  width: 70%;
   height: 60vh;
-  margin-top: 10%;
-  margin-left: 25%;
-  margin-bottom: 70px; */
+  margin: 50px 0 0 15%;
+  border-radius: 10px;
+  box-shadow: inset 0 8px 60px rgb(69, 85, 127),
+  inset 0 8px 8px  rgb(72, 89, 133),
+  inset 0 -4px 4px rgb(79, 97, 143);
 }
 
+/* ======================== */
+       /* about */
+.about{
+  transition: all .5s;
+  padding: 100px 0;
+  color: #000000;
+}
+.isi{
+  /* border-top: #000000 solid 5px; */
+  padding-top: 20px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left:10%;
+  color: #000000;
+  max-width: 80%;
 
-.wrapper .sidebar{
-  background: #c06114;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 110px;
-  height: 100%;
-  padding: 20px 0;
-  transition: all 0.5s ease;
-  /* margin-bottom: 100px; */
 }
 
-.wrapper .sidebar ul li a{
-    display: block;
-    padding: 35px 30px;
-    color: rgb(241, 237, 237);
-    font-size: 16px;
-    position: relative;
-}
+/* ==========================
+        syarat
+========================== */
 
-span{
-  font-size: 14px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.tabel-center{
+.syarat ul{
+  margin-left: 3%;
+  width: 95%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* bottom: 150; */
-  width: 100%;
-  height: 100vh;
-  border-collapse: collapse;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+.syarat .isi{
+  padding-top: 10px;
+}
+.syarat ul li {
+  padding: 5px;
+  margin-left: 10%;
+  max-width: 80%;
+  list-style: none;
+  background-color: #6d746f;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 
-  table thead  {
-    text-align: center; 
-    /* background-col: rgb(207, 199, 199); */
-  padding: 5px 10px;
-    color: #f08127;
-  } 
+/* ====================================
+           FEEDBACK
+==================================== */
+.fnf{
+  /* background-color: #c06014; */
+  width: 100%;
+  height: 1000px;
+  text-align: center;
+}
+.kotak{
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.kiri{
+  background-image: url(../pic/pengaju.jpg);
+  background-size: cover;
+  margin: 50px 0;
+  width: 500px;
+  height: 50vh;
 
+}
+.kanan{
+  background-image: url(../pic/pt3.png);
+  background-size: cover;
+  margin: 50px 0;
+  width: 500px;
+  height: 50vh;
+}
+.kiri,.kanan{
+  border-radius: 30px;
+}
+.kiri ul,.kanan ul{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.kiri ul li{
+  padding: 30px;
+  color: white;
+  background-color: #536162;
+  border-radius: 10px
+}
+
+.isi-kiri,.isi-kanan{
+  margin-top: 300px;
+}
+.kanan ul li{
+  padding: 30px;
+  color: white;
+  background-color: #c06014;
+  border-radius: 10px
+}
+
+/* 
+=================
+   masukan
+================= */
+.kritik{
+  /* background-color: #c06014; */
+  top: 100vh;
+  width: 80%;
+  height: 70vh;
+  margin: 100px 0 0 10%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.isi-masukan{
+  margin-left: 5%;
+}
+.masukan{
+  /* background-color: #414642; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  gap: 20px;
+}
+input.in{
+  margin-top: 50px;
+  width: 500px;
+  height: 20vh;
+  border-radius:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #424242 solid 3px;
+  background-color: #ebebeb;
+}
+input::placeholder{   
+  position: relative;
+  text-align: center;
+  color: #474747;
+  top: 10px;
+  font-size: 30px;
+}
+input.sub{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: #000000 solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input.sub:hover{
+  font-size: 13px;
+  background-color: #ec700a;
+  border: #010101 solid 2px;
+  border-radius: 5px;
+}
 /* ===============================
-            footer
+          footer
 =============================== */
 footer{
   display: flex;
@@ -235,34 +348,28 @@ footer{
 }
 footer ul{
   padding-left: 300px;
-  margin-left: 22%;
-  margin-bottom: 50px;
+  margin-right: 22%;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
 }
 footer ul li{
-  padding-left:90px ;
   list-style: none;
   padding: 10px;
 }
 footer img{
-  width: 50px;
-}
-
-footer h2{
-  margin-top: 10px;
+  width: 40px;
 }
 img.wa{
   position: relative;
-  right: 47%;
-  width: 10%;
+  right: 13px;
+  width: 58px;
   
 }
 .foll-h2{
   color: white;
-  font-size: 20px;
-  margin-right: 20px;
-  padding-bottom:4px;
+  font-size: 15px;
+  padding:2px 40px;
   border-bottom: #ebebeb solid 2px;
 }
 small{
@@ -271,9 +378,11 @@ small{
   font-size: 15px;
 
 }
-
-
-@media ((min-width : 720px ) and (max-width : 992px)) {
+/* ======================================================== */
+@media ((min-width : 720px)and (max-width : 992px) and (min-height:1520px) and (max-height:1600px) ) {
+  *,body{
+      overflow:visible;
+  }
   .container{
       /* background-color: aqua; */
       background-size: cover;
@@ -356,18 +465,176 @@ small{
       margin-left: 76.3%;
   }
 
+  .isi{
+      text-align: center;
+  }
+  
+  .kotak{
+      padding: 25px;
+  }
+  /* ================================= */
+  /* bagian footer */
+  footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #414642;
+      width: 100%;
+      height: 10vh;
+      text-align: center;
+  }
   footer ul{
       padding-left: 300px;
-      margin-right:50%;
-      margin-bottom: 50px;
+      margin-right:280px;
+      margin-bottom: 25px;
       display: flex;
       flex-direction: row;
   }
   img.wa{
-      margin-left: 35px;
-      width: 13%;
+      width: 50px;
   }
+  .foll-h2{
+          color: white;
+          font-size: 10px;
+          padding:px 45px;
+          border-bottom: #ebebeb solid 2px;
+      }
+/* ========================================== */
+  /* inner area ===================== */
+  .inner{
+      background-size: cover;
+      background-image: url('../pic/bg2.jpeg');
+      background-color: #c06014;
+      width: 70%;
+      height: 20vh;
+      margin: 50px 0 0 15%;
+      border-radius: 10px;
+      box-shadow: inset 0 8px 60px rgb(69, 85, 127),
+      inset 0 8px 8px  rgb(72, 89, 133),
+      inset 0 -4px 4px rgb(79, 97, 143);
+  }
+
+  /* ========================
+          feedback 
+  ======================== */
+  .fnf{
+      /* background-color: #c06014; */
+      width: 100%;
+      height: 1000px;
+      text-align: center;
+  }
+  .kotak{
+      display: flex;
+      width: 100%;
+      height: auto;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+  }
+  .kiri{
+      background-image: url(../pic/pengaju.jpg);
+      background-size: cover;
+      margin: 50px 0;
+      width: 500px;
+      height: 20vh;
+  
+  }
+  .kanan{
+      background-image: url(../pic/pt3.png);
+      background-size: cover;
+      margin: 50px 0;
+      width: 500px;
+      height: 20vh;
+  }
+  .kiri,.kanan{
+      border-radius: 30px;
+  }
+  .kiri ul,.kanan ul{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style: none;
+  }
+  .kiri ul li{
+      padding: 30px;
+      color: white;
+      background-color: #536162;
+      border-radius: 10px
+  }
+  
+  .isi-kiri,.isi-kanan{
+      margin-top: 350px;
+  }
+  .kanan ul li{
+      padding: 30px;
+      color: white;
+      background-color: #c06014;
+      border-radius: 10px
+  }
+
+  /* 
+=================
+   masukan
+================= */
+.kritik{
+  /* background-color: #c06014; */
+  margin-top: 10px;
+  width: 80%;
+  height: 40vh;
+  margin: 100px 0 0 10%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.isi-masukan{
+  margin-top: 200px;
+  margin-left: 5%;
+}
+.masukan{
+  /* background-color: #414642; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  gap: 20px;
+}
+input.in{
+  margin-top: 50px;
+  width: 500px;
+  height: 12vh;
+  border-radius:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #424242 solid 3px;
+  background-color: #ebebeb;
+}
+input::placeholder{   
+  position: relative;
+  text-align: center;
+  color: #474747;
+  top: 10px;
+  font-size: 30px;
+}
+input.sub{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: #000000 solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+input.sub:hover{
+  font-size: 13px;
+  background-color: #ec700a;
+  border: #010101 solid 2px;
+  border-radius: 5px;
+}
+
+
+
+}
 
 
