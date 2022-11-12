@@ -346,30 +346,28 @@ footer{
 }
 footer ul{
     padding-left: 300px;
-    margin-left: 22%;
-    margin-bottom: 50px;
+    margin-right: 22%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
 }
 footer ul li{
-    padding-left:90px ;
     list-style: none;
     padding: 10px;
 }
 footer img{
-    width: 50px;
+    width: 40px;
 }
 img.wa{
     position: relative;
-    right: 47%;
-    width: 10%;
+    right: 13px;
+    width: 58px;
     
 }
 .foll-h2{
     color: white;
-    font-size: 20px;
-    margin-right: 20px;
-    padding-bottom:4px;
+    font-size: 15px;
+    padding:2px 40px;
     border-bottom: #ebebeb solid 2px;
 }
 small{
@@ -380,6 +378,9 @@ small{
 }
 /* ======================================================== */
 @media ((min-width : 720px ) and (max-width : 992px)) {
+    body{
+        overflow-x: hidden;
+    }
     .container{
         /* background-color: aqua; */
         background-size: cover;
@@ -469,17 +470,169 @@ small{
     .kotak{
         padding: 25px;
     }
+    /* ================================= */
+    /* bagian footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #414642;
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+    }
     footer ul{
         padding-left: 300px;
-        margin-right:50%;
-        margin-bottom: 50px;
+        margin-right:280px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: row;
     }
     img.wa{
-        margin-left: 35px;
-        width: 13%;
+        width: 50px;
     }
+    .foll-h2{
+            color: white;
+            font-size: 10px;
+            padding:px 45px;
+            border-bottom: #ebebeb solid 2px;
+        }
+/* ========================================== */
+    /* inner area ===================== */
+    .inner{
+        background-size: cover;
+        background-image: url('../pic/bg2.jpeg');
+        background-color: #c06014;
+        width: 70%;
+        height: 20vh;
+        margin: 50px 0 0 15%;
+        border-radius: 10px;
+        box-shadow: inset 0 8px 60px rgb(69, 85, 127),
+        inset 0 8px 8px  rgb(72, 89, 133),
+        inset 0 -4px 4px rgb(79, 97, 143);
+    }
+
+    /* ========================
+            feedback 
+    ======================== */
+    .fnf{
+        /* background-color: #c06014; */
+        width: 100%;
+        height: 1000px;
+        text-align: center;
+    }
+    .kotak{
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .kiri{
+        background-image: url(../pic/pengaju.jpg);
+        background-size: cover;
+        margin: 50px 0;
+        width: 500px;
+        height: 20vh;
+    
+    }
+    .kanan{
+        background-image: url(../pic/pt3.png);
+        background-size: cover;
+        margin: 50px 0;
+        width: 500px;
+        height: 20vh;
+    }
+    .kiri,.kanan{
+        border-radius: 30px;
+    }
+    .kiri ul,.kanan ul{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+    }
+    .kiri ul li{
+        padding: 30px;
+        color: white;
+        background-color: #536162;
+        border-radius: 10px
+    }
+    
+    .isi-kiri,.isi-kanan{
+        margin-top: 350px;
+    }
+    .kanan ul li{
+        padding: 30px;
+        color: white;
+        background-color: #c06014;
+        border-radius: 10px
+    }
+
+    /* 
+=================
+     masukan
+================= */
+.kritik{
+    /* background-color: #c06014; */
+    margin-top: 10px;
+    width: 80%;
+    height: 40vh;
+    margin: 100px 0 0 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.isi-masukan{
+    margin-top: 200px;
+    margin-left: 5%;
+}
+.masukan{
+    /* background-color: #414642; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    gap: 20px;
+}
+input.in{
+    margin-top: 50px;
+    width: 500px;
+    height: 12vh;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: #424242 solid 3px;
+    background-color: #ebebeb;
+}
+input::placeholder{   
+    position: relative;
+    text-align: center;
+    color: #474747;
+    top: 10px;
+    font-size: 30px;
+}
+input.sub{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: #000000 solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input.sub:hover{
+    font-size: 13px;
+    background-color: #ec700a;
+    border: #010101 solid 2px;
+    border-radius: 5px;
+}
+
+
+
 }
 
 
