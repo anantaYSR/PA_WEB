@@ -90,10 +90,10 @@
         <h3>Login</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Username" name="username">
+        <input type="text" placeholder="Email or Username" name="username" autocomplete="off">
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" name="pass">
+        <input type="password" placeholder="Password" name="pass" autocomplete="off">
         <input type="submit" name="btn" class="submit" value="LOGIN">
         <p>Belum memiliki akun?
                 <a href="register.php">Register</a>
