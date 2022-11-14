@@ -156,7 +156,7 @@
                 </div>
                 <div class="item">
                     <label for>Jumlah Investasi<span>*</span></label>
-                    <input type="number" name="jumlah" required  />
+                    <input type="number" name="jumlah" required/>
                 </div>
                 <div>
                     <label for>Lama Waktu Investasi<span>*</span></label>
@@ -174,7 +174,7 @@
                     <input type="hidden" name="tanggalDaftar" value=<?=date("Y-m-d")?>>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" name="aggre" value="True" require><br> <i>I agree to the Privacy Poalicy for PT.CK Pialang</i>
+                    <input type="checkbox" id="aggre" value="True" require><br> <i>I agree to the Privacy Poalicy for PT.CK Pialang</i>
                 </div>
                 <div class="btn-block">
                     <input type="submit" name="btn" value="APPLY">
@@ -194,5 +194,10 @@
     </div>
 </body>
 <script src="../js/index.js"></script>
+<script>
+    function aggree() {
+        var x = document.getElementById("aggre").required;
+    }
+</script>
 </html>
 

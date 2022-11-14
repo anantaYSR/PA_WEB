@@ -30,8 +30,8 @@
         <input type="text" placeholder="Nama" name="nama" required autocomplete="off">
         <input type="text" placeholder="Email" name="email" required autocomplete="off">
         <input type="text" placeholder="Username" name="username" required autocomplete="off">
-        <input type="password" placeholder="Password" name="pass" required>
-        <input type="password" placeholder="Konfirmasi Password" name="cpass" required>
+        <input type="password" placeholder="Password" name="pass" required autocomplete="off">
+        <input type="password" placeholder="Konfirmasi Password" name="cpass" required autocomplete="off">
         <input type="submit" name="btn" class="submit" value="Registrasi">
         <p>Sudah punya akun?
                 <a href="login.php">Login</a>
