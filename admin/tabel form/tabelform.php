@@ -136,7 +136,7 @@
                         <td> <?=$row['jumlah']?> </td>
                         <td> <?=$row['waktu']?> </td>
                         <td> <?=$row['tgl_daftar']?> </td>
-                        <td><img src="../ktp/<?=$row['foto_ktp']?>" alt="" width=10px></td>
+                        <td><img src="../ktp/<?=$row['foto_ktp']?>" alt="" width=20px></td>
                         </tr>
                     <?php
                         $i++;}
