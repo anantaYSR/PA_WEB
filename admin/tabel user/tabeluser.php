@@ -144,9 +144,11 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#tabel-data').DataTable({
-                "paging":false,
                 "ordering":false,
-                "info":false
+                "info":false,
+                "lengthChange":false,
+                "pageLength":10
+
             }
 
             );

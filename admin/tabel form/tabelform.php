@@ -136,7 +136,7 @@
                         <td> <?=$row['jumlah']?> </td>
                         <td> <?=$row['waktu']?> </td>
                         <td> <?=$row['tgl_daftar']?> </td>
-                        <td><img src="../ktp/<?=$row['foto_ktp']?>" alt="" width=10px></td>
+                        <td><img src="../ktp/<?=$row['foto_ktp']?>" alt="" width=30% height=30%></td>
                         </tr>
                     <?php
                         $i++;}
@@ -162,7 +162,9 @@
         $(document).ready(function(){
             $('#tabel-data').DataTable({
                 "ordering":false,
-                "info":false
+                "info":false,
+                "lengthChange":false,
+                "pageLength":3
             }
 
             );
