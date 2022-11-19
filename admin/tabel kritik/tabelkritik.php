@@ -149,8 +149,10 @@ $result = mysqli_query($db, "SELECT * FROM kritik");
     <script type="text/javascript">
         $(document).ready(function() {
             $('#tabel-data').DataTable({
-                    "ordering": false,
-                    "info": false
+                    "ordering":false,
+                    "info":false,
+                    "lengthChange":false,
+                    "pageLength":10
                 }
 
             );

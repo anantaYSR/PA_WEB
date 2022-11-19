@@ -161,7 +161,9 @@
         $(document).ready(function(){
             $('#tabel-data').DataTable({
                 "ordering":false,
-                "info":false
+                "info":false,
+                "lengthChange":false,
+                "pageLength":10
             }
 
             );
