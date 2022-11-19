@@ -66,35 +66,35 @@
         <div class="center">
         <div class="wrapper">
                 <div class="sidebar">
-                    <ul>
-                        <li>
-                            <a href="../tabel user/tabeluser.php">
-                                <i class="material-icons">supervisor_account</i>
-                                <span>User</span>
-                            </a>
+                <ul>
+                    <li>
+                        <a href="../tabel user/tabeluser.php">
+                            <i class="material-icons" style="size: 20px;" >person</i>
+                            <span>User</span> 
+                        </a>
                         </li>
-                        <li>
-                            <a href="../tabel investor/tbl_investor.php">
-                                <i class="material-icons">receipt</i>
-                                <span>Daftar Investor</span>
-
-                            </a>
-                        </li>
+                    <li>
+                        <a href="../tabel investor/tbl_investor.php">
+                            <i class="material-icons">work</i>
+                            <span>Daftar Investor</span>
+                            
+                        </a>
+                    </li>
                         <li>
                             <a href="../tabel form/tabelform.php">
-                                <i class="material-icons">loyalty</i>
+                                <i class="material-icons">face_6</i>
                                 <span>Calon Investor</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel relasi/tbl_perusahaan.php">
-                                <i class="material-icons">assessment</i>
-                                <span>Relasi</span>
+                                <i class="material-icons">account_tree</i>
+                                <span>Experience</span>
                             </a>
                         </li>
                         <li>
                             <a href="../tabel kritik/tabelkritik.php">
-                                <i class="material-icons">build</i>
+                                <i class="material-icons">forward_to_inbox</i>
                                 <span>Masukkan</span>
                             </a>
                         </li>
