@@ -124,7 +124,7 @@
                         <td> <?=$row['tahun']?> </td>
                         <td> <?=$row['lama_kerjasama']?> </td>
                         <td ><a  href="ubahrelasi.php?id=<?=$row['id']?>"><i class="material-icons" color="green">cached</i></a></td>
-                        <td><a  href="hapusrelasi.php?id=<?=$row['id']?>"><i class="material-icons">delete</i></a></td>
+                        <td><a  href="hapusrelasi.php?id=<?=$row['id']?>"><i class="material-icons" style="color: red;">delete</i></a></td>
                         </tr>
                     <?php
                         $i++;}

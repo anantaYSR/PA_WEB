@@ -181,6 +181,8 @@ body{
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    align-self: flex-start;
+    padding-left: 100px;
 }
 
 .tambah:hover {

@@ -125,7 +125,7 @@ $result = mysqli_query($db, "SELECT * FROM kritik");
                             <tr>
                                 <td> <?= $i; ?> </td>
                                 <td> <?= $row['masukkan'] ?> </td>
-                                <td><a href="hapusmasukkan.php?id=<?= $row['id'] ?>"><i class="material-icons">delete</i></a></td>
+                                <td><a href="hapusmasukkan.php?id=<?= $row['id'] ?>"><i class="material-icons" style="color: red;">delete</i></a></td>
                             </tr>
                         <?php
                             $i++;
