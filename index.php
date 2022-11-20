@@ -1,5 +1,16 @@
 <?php
-require 'konfik.php';
+    session_start();
+    require 'konfik.php';
+
+    if(isset($_SESSION['login'])){
+        if($_SESSION['login']=='admin'){
+            header('location: ./admin/index.php');
+            exit;
+        }
+        elseif($_SESSION['login']=='user'){
+            header("location: ./user/index.php");
+        }
+    }
 
 if(isset($_POST['sub'])){
         $masukkan=$_POST['masukan'];

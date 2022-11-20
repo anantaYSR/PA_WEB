@@ -276,10 +276,16 @@ font-size: 15px;
 }
 
 
-@media ((min-width : 720px)and (max-width : 992px) and (min-height:1520px) and (max-height:1600px) ) {
-  *,body{
+@media ((min-width : 720px) and (max-width : 992px) and (min-height:1520px) and (max-height:1600px) ) {
+  *{
       overflow-x:hidden;
   }
+    .display{
+    position: relative;
+    max-width: 20%;
+
+  }
+
   .container{
       /* background-color: aqua; */
       background-size: cover;
@@ -300,7 +306,9 @@ font-size: 15px;
                   inset 0 -4px 60px rgb(53, 46, 46);
   }
   .k{
+      position: relative;
       background-color: #ff7300;
+      top: 4px;
       padding: 4px 8px;
       border-radius: 5px;
       text-shadow:
@@ -312,16 +320,19 @@ font-size: 15px;
   .name-header{
       font-size: 10px;
       position: absolute;
-      width: 40%;
+      top: 25px;
+      width: 46%;
+      height: 5vh;
       display: flex;
       cursor: pointer;
       flex-direction: row;
   }
   .name-header p{
+    margin-left: 10px;
       color: rgb(255, 255, 255);
       position: relative;
-      bottom: 15px;
-      font-size: 40px;
+      top: 19px;
+      font-size: 30px;
   }
   .header nav{
       height: 4vh;
@@ -371,6 +382,7 @@ font-size: 15px;
   }
   /* ================================= */
   /* bagian footer */
+/* ================================= */
   footer{
       display: flex;
       flex-direction: column;
@@ -383,20 +395,25 @@ font-size: 15px;
   }
   footer ul{
       padding-left: 300px;
-      margin-right:280px;
+      margin-right:63%;
       margin-bottom: 25px;
       display: flex;
       flex-direction: row;
   }
   img.wa{
-      width: 50px;
+    
+      width: 35px;
+      margin-left: 20px;
   }
   .foll-h2{
           color: white;
           font-size: 10px;
-          padding:px 45px;
+          padding: 0 45px;
           border-bottom: #ebebeb solid 2px;
       }
+    ul li a img{
+        width: 25px;
+    }
 /* ========================================== */
   /* inner area ===================== */
   .inner{
@@ -529,7 +546,4 @@ input.sub:hover{
   border: #010101 solid 2px;
   border-radius: 5px;
 }
-
-
-
 }

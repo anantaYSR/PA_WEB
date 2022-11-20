@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="tabel-center">
-                <div style= "align-self: flex-start; padding-left: 385px; padding-bottom: 20px;">
+                <div style= "align-self: flex-start; padding-left: 295px; padding-bottom: 20px;">
                     <a style="color: green;" href="tambahrelasi.php"><i  class="material-icons" style="color: green;" >add_box</i> <br>  Tambah data</a>
                 </div>
                 <table id="tabel-data"  class="display">
